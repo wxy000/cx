@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../start/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../../../src/style/admin.css" media="all">
+    <link rel="stylesheet" href="../../../../easyui/easyui.css" media="all">
+    <link rel="stylesheet" href="../../../../easyui/icon.css" media="all">
+
+</head>
+<body>
+
+<style>
+    .layui-upload-img {
+        width: 92px;
+        height: 92px;
+        margin: 0 10px 10px 0;
+    }
+</style>
+
+<script>
+    function toPrice(){
+        //将price的值的单位改为“分”
+        $('#price').val($('#priceView').val()*100);
+    }
+</script>
+
+<div class="layui-fluid">
+    <div class="layui-card">
+        <div class="layui-card-header">商品详情</div>
+        <div id="vue" class="layui-card-body" style="padding: 15px;">
+            <div class="layui-btn-container">
+                <div class="layui-btn-group" style="float: right; padding-bottom: 3px">
+                    <button id="s1" class="layui-btn layui-btn-sm layui-btn-normal" @click="zhuangtai(1, '上架')"><i class="layui-icon">&#xe605;</i>上架</button>
+                    <button id="s2" class="layui-btn layui-btn-sm layui-btn-warm" @click="zhuangtai(2, '下架')"><i class="layui-icon">&#x1006;</i>下架</button>
+                    <button id="s4" class="layui-btn layui-btn-sm" @click="bianji()"><i class="layui-icon">&#xe642;</i>编辑</button>
+                    <button id="s3" class="layui-btn layui-btn-sm layui-btn-danger" @click="zhuangtai(3, '删除')"><i class="layui-icon">&#xe640;</i>删除</button>
+                </div>
+            </div>
+            <hr class="layui-bg-gray">
+            <form class="layui-form layui-form-pane" action="" lay-filter="component-form-group">
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品种类</label>
+                    <input id="cid" name='cid' lay-verify='cid' autocomplete='off' :value="itemInfo.cid" hidden>
+                    <div class="layui-input-block choosecid">
+                        <div id="name" style='padding: 6px'>{{itemInfo.category_name}}</div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品标题</label>
+                    <input id="id" name='id' autocomplete='off' :value="itemInfo.id" hidden>
+                    <div class="layui-input-block">
+                        <input type="text" name="title" :value="itemInfo.title" lay-verify="title" autocomplete="off" placeholder="请输入标题"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">商品卖点</label>
+                    <div class="layui-input-block">
+                        <textarea name="sellPoint" lay-verify="sellPoint" autocomplete="off" placeholder="请输入内容" class="layui-textarea">{{itemInfo.sell_point}}</textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">商品价格</label>
+                    <div class="layui-input-block">
+                        <input type="text" id="priceView" :value="itemInfo.price/100" onblur="toPrice()" lay-verify="required|number" class="layui-input">
+                        <input type="text" :value="itemInfo.price" id="price" name="price" autocomplete="off" hidden>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">库存数量</label>
+                    <div class="layui-input-block">
+                        <input type="text" :value="itemInfo.num" name="num" lay-verify="required|number" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">条形码</label>
+                    <div class="layui-input-block">
+                        <input type="text" :value="itemInfo.barcode" name="barcode" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-col-md12">
+                    <div class="layui-card">
+                        <div class="layui-card-header">商品图片</div>
+                        <div class="layui-card-body">
+                            <div class="layui-upload">
+                                <button type="button" class="layui-btn" id="test-upload-more">上传图片</button>
+                                <blockquote class="layui-elem-quote layui-quote-nm" style="margin-top: 10px;">
+                                    预览图：
+                                    <div class="layui-upload-list" id="test-upload-more-list">
+                                        <span v-for="img in itemInfo.images">
+                                            <img :src="img" class="layui-upload-img">
+                                        </span>
+                                    </div>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input id="image" name="image" autocomplete="off" hidden>
+                <div class="layui-form-item layui-form-text">
+                    <label class="layui-form-label">商品描述</label>
+                    <div class="layui-input-block">
+                        <textarea id="desc" name="desc" lay-verify="content" autocomplete="off" style="display: none;" class="layui-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="layui-form-item layui-layout-admin">
+                    <div class="layui-input-block">
+                        <div class="layui-footer" style="left: 0;">
+                            <button disabled class="layui-btn layui-btn-disabled bianji" lay-submit="" lay-filter="component-form-demo1">提交修改</button>
+                            <button disabled type="reset" class="layui-btn layui-btn-primary layui-btn-disabled bianji">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../../../start/layui/layui.js"></script>
+<script src="../../../../easyui/jquery.min.js"></script>
+<script src="../../../../easyui/jquery.easyui.min.js"></script>
+<script src="../../../../src/vue.js"></script>
+<script>
+    layui.config({
+        base: '../../../../src/' //静态资源所在路径
+    }).extend({
+        index: 'index' //主入口模块
+    }).use(['index', 'form', 'laydate', 'upload', 'layedit'], function () {
+        var $ = layui.$
+            , admin = layui.admin
+            , element = layui.element
+            , layer = layui.layer
+            , laydate = layui.laydate
+            , form = layui.form
+            , upload = layui.upload
+            , layedit = layui.layedit;
+
+        var vm = new Vue({
+            el:'#vue',
+            data: {
+                itemInfo: {}
+            },
+            created:function(){
+                var _self=this;
+                var id=_self.GetQueryString("id");
+                var url="/item/details/"+id;
+                $.get(url,function(data){
+                    _self.itemInfo=data;
+                    $('#image').val("");
+                    $('#image').val(data.images.join(","));
+                    if (data.status == 1) {
+                        //禁止按钮
+                        $('#s1').addClass('layui-btn-disabled').attr('disabled',"true");
+                    } else if (data.status == 2) {
+                        $('#s2').addClass('layui-btn-disabled').attr('disabled',"true");
+                    } else if (data.status == 3) {
+                        $('#s1').addClass('layui-btn-disabled').attr('disabled',"true");
+                        $('#s2').addClass('layui-btn-disabled').attr('disabled',"true");
+                        $('#s3').addClass('layui-btn-disabled').attr('disabled',"true");
+                        $('#s4').addClass('layui-btn-disabled').attr('disabled',"true");
+                    }
+                    layedit.setContent(editindex, data.item_desc);
+                });
+            },
+            methods:{
+                GetQueryString(name){
+                    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+                    var r = window.location.search.substr(1).match(reg);//search,查询？后面的参数，并匹配正则
+                    if(r!=null)return  unescape(r[2]); return null;
+                },
+                bianji(){
+                    //解禁按钮
+                    $('.bianji').removeClass('layui-btn-disabled').removeAttr('disabled',"true");
+                },
+                zhuangtai(sid, name){
+                    layer.confirm('你确定要'+name+'该商品吗？', {icon: 3, title:'提示'}, function(index){
+                        $.ajax({
+                            type: "get",
+                            url : "/item/updateStatus?itemId="+vm.GetQueryString('id')+"&status="+sid,
+                            success: function(result) {
+                                if (result.status == 200) {
+                                    layer.msg(name + "成功",{icon: 1, time: 2000}, function () {
+                                        location.reload();
+                                    });
+                                }else {
+                                    layer.msg(name + "失败：" + result.msg,{
+                                        icon: 5,
+                                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                        anim: 6
+                                    });
+                                }
+                            },
+                            error: function (e) {
+                                layer.msg(name + "失败",{
+                                    icon: 5,
+                                    time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                    anim: 6
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                }
+            }
+        });
+
+        var editindex = layedit.build('desc'); //建立编辑器
+
+        form.render(null, 'component-form-group');
+
+        laydate.render({
+            elem: '#LAY-component-form-group-date'
+        });
+
+        /* 自定义验证规则 */
+        form.verify({
+            title: function (value) {
+                if (value.length <= 0) {
+                    return '请输入商品标题';
+                }
+            }
+            , sellPoint: function (value) {
+                if (value.length <= 0) {
+                    return '请输入商品卖点信息';
+                }
+            }
+            , content: function (value) {
+                layedit.sync(editindex);
+            }
+            , cid: function (value) {
+                if (value == null || value == ""){
+                    return '请选择类目';
+                }
+            }
+        });
+
+        /* 监听提交 */
+        form.on('submit(component-form-demo1)', function (data) {
+            /*parent.layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            });*/
+            layer.confirm('确定更新？', {icon: 3, title:'提示'}, function(index) {
+                //ajax的post方式提交表单
+                //$(".layui-form").serialize()将表单序列号为key-value形式的字符串
+                console.log(data);
+                $.ajax({
+                    type: "post",
+                    url: "/item/update",
+                    data: $(".layui-form").not($("input[name='file']")).serialize(),
+                    success: function (data) {
+                        if (data.status == 200) {
+                            layer.msg('商品更新成功', {icon: 1, time: 3000}, function () {
+                                location.reload();
+                            });
+                        } else {
+                            layer.msg('商品更新失败', {
+                                icon: 5,
+                                time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                anim: 6
+                            });
+                        }
+                    },
+                    error: function (e) {
+                        layer.msg('接口错误', {
+                            icon: 5,
+                            time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                            anim: 6
+                        });
+                    }
+                });
+            });
+            return false;
+        });
+
+        //点击弹出层
+        var active = {
+            notice: function(){
+                layer.open({
+                    title: '选择类目'
+                    ,area: ['300px', '400px']
+                    ,content: '<ul id="easyuitree" class="easyui-tree"></ul>'
+                    ,success: function(layero, index){
+                        console.log(layero, index);
+                        //树控件
+                        $("#easyuitree").tree({
+                            url: '/item/cat/list',
+                            animate:true,
+                            onClick: function (node) {
+                                if($(this).tree("isLeaf",node.target)){
+                                    // 填写到cid中
+                                    console.log(node);
+                                    $('#name').html("");
+                                    $('#name').html(node.text);
+                                    $('#cid').html("");
+                                    $('#cid').val(node.id);
+                                }
+                            }
+                        });
+                    }
+                });
+
+            }
+        };
+        $('.choosecid').on('click', function(){
+            var othis = $(this);
+            active.notice ? active.notice.call(this, othis) : '';
+        });
+
+        //多图片上传
+        //存放图片地址
+        var arr = new Array();
+        upload.render({
+            elem: '#test-upload-more'
+            , url: '/pic/upload'
+            , multiple: true
+            , accept: 'images'
+            , before: function (obj) {
+                //预读本地文件示例，不支持ie8
+                wait = layer.load(2);
+                $('#test-upload-more-list').html("");
+                obj.preview(function (index, file, result) {
+                    $('#test-upload-more-list').append('<img src="' + result + '" alt="' + file.name + '" class="layui-upload-img">')
+                });
+                $('#image').val("");
+            }
+            , allDone: function (o) {
+                $('#image').val(arr.join(","));
+            }
+            , done: function (res) {
+                //上传完毕
+                if (res.error == 0) {
+                    //设置图片地址到数组
+                    arr.push(res.url);
+                    layer.msg(res.message,{
+                        icon: 1,
+                        time: 2000
+                    });
+                }else if (res.error == 1) {
+                    layer.msg(res.message,{
+                        icon: 5,
+                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                        anim: 6
+                    });
+                }
+                layer.close(wait);
+            }
+            , error: function (obj) {
+                layer.close(wait);
+            }
+        });
+    });
+</script>
+</body>
+</html>
