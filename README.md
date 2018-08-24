@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # cx 辰星商城
 分布式，采用了soa面向服务的架构
 
@@ -20,3 +21,7 @@
 ### cx-content-service（内容管理服务）
 #### tomcat8083
 #### dubbo20881
+=======
+# cx
+分布式，采用了soa面向服务的架构
+>>>>>>> origin/master
