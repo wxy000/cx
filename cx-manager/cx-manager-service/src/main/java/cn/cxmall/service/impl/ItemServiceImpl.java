@@ -121,6 +121,7 @@ public class ItemServiceImpl implements ItemService {
         TbItem tbItem = new TbItem();
         tbItem.setId(itemId);
         tbItem.setStatus((byte) status);
+        tbItem.setUpdated(new Date());
         int update = itemMapper.updateByPrimaryKeySelective(tbItem);
         if (update == 1){
             return CxResult.ok();
@@ -128,6 +129,12 @@ public class ItemServiceImpl implements ItemService {
         return CxResult.build(501, "更新状态失败");
     }
 
+    /**
+     * 更新商品信息
+     * @param item
+     * @param desc
+     * @return
+     */
     @Override
     public CxResult updateItemById(TbItem item, String desc) {
         //补全TbItem信息

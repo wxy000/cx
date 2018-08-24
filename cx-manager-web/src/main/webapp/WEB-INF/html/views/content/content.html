@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../start/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../../../src/style/admin.css" media="all">
+    <link rel="stylesheet" href="../../../../src/style/template.css" media="all">
+</head>
+<body>
+
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-sm4 layui-col-md3">
+            <div class="layui-card">
+                <div class="layui-card-header">内容类别</div>
+                <div class="layui-card-body" id="cardbody1"></div>
+            </div>
+        </div>
+        <div class="layui-col-sm8 layui-col-md9">
+            <div class="layui-card">
+                <div class="layui-card-header" id="cardheader2">辰星商城</div>
+                <div class="layui-card-body">
+                    <div class="layui-btn-group demoTable">
+                        <button class="layui-btn layui-btn-primary" data-type="add">新增内容</button>
+                        <button class="layui-btn layui-btn-danger" data-type="batchRemove">批量删除</button>
+                    </div>
+
+                    <table id="table" class="layui-table" lay-filter="demo"></table>
+
+                    <script type="text/html" id="barDemo">
+                        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input id="categoryId" name="cid" hidden>
+<input id="categoryname" name="cname" hidden>
+
+<script src="../../../../start/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '../../../../src/' //静态资源所在路径
+    }).extend({
+        index: 'index' //主入口模块
+    }).use(['index']);
+    layui.use(['laypage', 'layer', 'tree', 'table'], function () {
+        var laypage = layui.laypage
+            , layer = layui.layer
+            , $ = layui.$
+            , table = layui.table;
+
+        //加载等待
+        var wait = layer.load(2);
+        $.ajax({
+            type: "post",
+            url: "/content/category/list",
+            dataType:'json',
+            success:function(data){
+                layer.close(wait);
+                layui.tree({
+                    elem:'#cardbody1',
+                    nodes:data,
+                    click:function (obj) {
+                        $('#cardheader2').html("");
+                        if (obj.children != null) {
+                            $('#cardheader2').html("辰星商城");
+                        }else {
+                            $('#cardheader2').html("辰星商城 -- <em>" + obj.name + "</em>");
+                            $('#categoryId').val("");
+                            $('#categoryId').val(obj.id);
+                            $('#categoryname').val("");
+                            $('#categoryname').val(obj.name);
+                            table.render({
+                                elem: '#table'
+                                ,height: 380
+                                ,url: '/content/list?id=' + obj.id //数据接口
+                                ,page: true //开启分页
+                                ,response: {
+                                    countName: 'total' //数据总数的字段名称，默认：count
+                                    ,dataName: 'rows' //数据列表的字段名称，默认：data
+                                }
+                                ,cols: [[ //表头
+                                    {type:'checkbox', fixed: 'left'}
+                                    ,{field:'id', title: 'ID', width:80, sort: true, fixed: true}
+                                    ,{field:'title', title: '内容标题', width:135}
+                                    ,{field:'subTitle', title: '内容子标题', width:135}
+                                    ,{field:'titleDesc', title: '内容描述', width:135}
+                                    ,{field:'content', title: '内容', width:80}
+                                    ,{field:'url', title: '链接', width:80}
+                                    ,{field:'pic', title: '图片', width:80}
+                                    ,{field:'created', title: '创建日期', width:135, sort: true}
+                                    ,{field:'updated', title: '更新日期', width:135, sort: true}
+                                    ,{fixed: 'right', title: '操作', width:130, align:'center', toolbar: '#barDemo'}
+                                ]]
+                            });
+                        }
+                    }
+                });
+            },
+            error:function(){
+                layer.close(wait);
+                layer.msg("请求出错",{
+                    icon: 5,
+                    time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                    anim: 6
+                });
+            }
+        });
+
+        //监听表格复选框选择
+        table.on('checkbox(demo)', function(obj){
+            console.log(obj)
+        });
+        //监听工具条
+        table.on('tool(demo)', function(obj){
+            var data = obj.data;
+            if(obj.event === 'del'){
+                layer.confirm('真的删除行么', function(index){
+                    $.ajax({
+                        type: "get",
+                        url : "/content/del?id=" + data.id,
+                        success: function(result) {
+                            if (result.status == 200) {
+                                layer.msg("删除成功",{icon: 1, time: 2000}, function () {
+                                    obj.del();
+                                });
+                            }else {
+                                layer.msg("删除失败",{
+                                    icon: 5,
+                                    time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                    anim: 6
+                                });
+                            }
+                        },
+                        error: function (e) {
+                            layer.msg("接口错误",{
+                                icon: 5,
+                                time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                anim: 6
+                            });
+                        }
+                    });
+                    layer.close(index);
+                });
+            } else if(obj.event === 'edit'){
+                layer.open({
+                    type: 2,
+                    title: '编辑“' + data.title + "”",
+                    shade: false,
+                    maxmin: true,
+                    area: ['90%', '90%'],
+                    content: '../content/editcontent',
+                    success: function (layero, index){
+                        var body = layer.getChildFrame('body', index);
+                        body.find('#hidValue').val(data.id);
+                        body.find('#title').val(data.title);
+                        body.find('#subTitle').val(data.subTitle);
+                        body.find('#titleDesc').val(data.titleDesc);
+                        body.find('#url').val(data.url);
+                        body.find('#pic').val(data.pic);
+                        body.find('#content').val(data.content);
+                        body.find('#test-upload-normal-img').attr('src', data.pic);
+                    }
+                });
+            }
+        });
+
+        var active = {
+            add: function(){
+                var name = $('#categoryname').val();
+                if (name != "" && name != null) {
+                    layer.open({
+                        type: 2,
+                        title: '在“' + name + "”栏目下新增内容",
+                        shade: false,
+                        maxmin: true,
+                        area: ['90%', '90%'],
+                        content: '../content/addcontent',
+                        success: function (layero, index){
+                            var body = layer.getChildFrame('body', index);
+                            body.find('#hidValue').val($('#categoryId').val());
+                        }
+                    });
+                }else {
+                    layer.msg('请选择一个栏目', {
+                        icon: 5,
+                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                        anim: 6
+                    });
+                }
+            }
+            ,batchRemove: function(){ //批量删除
+                var checkStatus = table.checkStatus('table')
+                    ,data = checkStatus.data;
+                var ids = new Array();
+                if (data.length > 0) {
+                    for (var i = 0; i < data.length; i++) {
+                        ids.push(data[i].id);
+                    }
+                    layer.confirm('真的删除行么', function(index){
+                        $.ajax({
+                            type: "get",
+                            url: "/content/remove?ids=" + ids,
+                            success: function(result) {
+                                if (result.status == 200) {
+                                    layer.msg("删除成功",{icon: 1, time: 2000}, function () {
+                                        layui.table.reload('table'); //刷新t
+                                    });
+                                }else {
+                                    layer.msg("删除失败",{
+                                        icon: 5,
+                                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                        anim: 6
+                                    });
+                                }
+                            },
+                            error: function (e) {
+                                layer.msg("接口错误",{
+                                    icon: 5,
+                                    time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                    anim: 6
+                                });
+                            }
+                        });
+                        layer.close(index);
+                    });
+                }else {
+                    layer.msg("你没有选中任何内容",{
+                        icon: 5,
+                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                        anim: 6
+                    });
+                }
+            }
+        };
+
+        $('.demoTable .layui-btn').on('click', function(){
+            var type = $(this).data('type');
+            active[type] ? active[type].call(this) : '';
+        });
+
+    })
+</script>
+</body>
+</html>

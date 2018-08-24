@@ -80,7 +80,7 @@
                 }
             }
         });
-        //数组转为json
+        //数组转为json，点击大图需要的json类型
         function arrToJson(id, title, arr){
             var json = "{" +
                 "\"title\": \"" + title + "\"," +
@@ -100,6 +100,7 @@
             json = $.parseJSON(json);
             return json;
         }
+        //加载等待
         var wait = layer.load(2);
         $.get("/item/list?page=1&rows=1", function(result) {
             laypage.render({

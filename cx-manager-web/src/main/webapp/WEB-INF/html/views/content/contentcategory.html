@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>内容分类管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../start/layui/css/layui.css" media="all">
+</head>
+
+<body>
+<div id="demo"></div>
+</body>
+<script src="../../../../src/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '../../../../src/' //静态资源所在路径
+    }).extend({
+        index: 'index' //主入口模块
+    }).use(['index']);
+
+    var $;
+
+    layui.use(['form', 'tree', 'layer'], function() {
+        $ = layui.$;
+        var layer = layui.layer;
+
+        var layout = [
+            { name: '菜单名称', treeNodes: true, headerClass: 'value_col', colClass: 'value_col', style: 'width: 70%' },
+            {
+                name: '操作',
+                headerClass: 'value_col',
+                colClass: 'value_col',
+                style: 'width: 25%',
+                render: function(row) {
+                    console.log(row);
+                    var str='';
+                    if(row.parentId != 0){//有父元素没有子元素；
+                        str = '<a class="layui-btn layui-btn-danger layui-btn-xs" onclick=del("'+row.id+'","'+row.name+'")><i class="layui-icon">&#xe640;</i> 删除</a>';
+                    }
+                    return '<a class="layui-btn layui-btn-normal layui-btn-xs" onclick=edit("'+row.id+'","'+row.name+'",1)><i class="layui-icon">&#xe654;</i> 新增</a>'+
+                            '<a class="layui-btn layui-btn-warm layui-btn-xs" onclick=edit("'+row.id+'","'+row.name+'",2)><i class="layui-icon">&#xe642;</i> 修改</a>'+
+                            str;
+                }
+            }
+        ];
+
+        //加载等待
+        var wait = layer.load(2);
+        $.ajax({
+            type: "post",
+            url: "/content/category/list",
+            dataType:'json',
+            success:function(data){
+                layer.close(wait);
+                layui.treeGird({
+                    elem:'#demo',
+                    //spreadable:true,
+                    nodes:data,
+                    layout:layout
+                });
+            },
+            error:function(){
+                layer.close(wait);
+            }
+        });
+
+    });
+
+    //1、新增，2、修改
+    function edit(nodeId, name, st) {
+        var title, url, zi;
+        if (st == 1) {
+            title = "在“" + name + "”栏目下新增子目录";
+            url = "/content/category/add?id=" + nodeId + "&name=";
+            zi = "新增";
+        }else if (st == 2) {
+            title = "修改“" + name + "”栏目名称为";
+            url = "/content/category/update?id=" + nodeId + "&name=";
+            zi = "修改";
+        }
+        layer.prompt({
+            title: title
+        }, function(value, index, elem){
+            $.ajax({
+                type: 'get',
+                url: url + value,
+                success: function(result) {
+                    if (result.status == 200) {
+                        layer.msg(zi + "目录“" + value + "”成功",{icon: 1, time: 2000}, function () {
+                            location.reload();
+                        });
+                    }else {
+                        layer.msg(zi + "失败",{
+                            icon: 5,
+                            time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                            anim: 6
+                        });
+                    }
+                },
+                error: function (e) {
+                    layer.msg(zi + "失败",{
+                        icon: 5,
+                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                        anim: 6
+                    });
+                }
+            });
+            layer.close(index);
+        });
+    }
+    function del(nodeId, name) {
+        layer.confirm('确定删除栏目“'+ name +'”及其子目录？', {icon: 3, title:'提示'}, function(index) {
+            $.ajax({
+                type: 'post',
+                url: '/content/category/del?id=' + nodeId,
+                success: function(result) {
+                    if (result.status == 200) {
+                        layer.msg("删除目录“" + name + "”及其子目录成功",{icon: 1, time: 2000}, function () {
+                            location.reload();
+                        });
+                    }else {
+                        layer.msg("删除失败",{
+                            icon: 5,
+                            time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                            anim: 6
+                        });
+                    }
+                },
+                error: function (e) {
+                    layer.msg("删除失败",{
+                        icon: 5,
+                        time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                        anim: 6
+                    });
+                }
+            });
+        });
+    }
+</script>
+
+</html>
