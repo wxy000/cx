@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>索引库管理</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../../../../start/layui/css/layui.css" media="all">
+</head>
+
+<body>
+<div align="center" style="margin-top: 250px">
+    <button id="importData" data-method="importData" class="layui-btn layui-btn-normal">一键导入商品信息到solr索引库</button>
+</div>
+</body>
+<script src="../../../../src/layui/layui.js"></script>
+<script>
+    layui.config({
+        base: '../../../../src/' //静态资源所在路径
+    }).extend({
+        index: 'index' //主入口模块
+    }).use(['index']);
+
+    layui.use(['form', 'layer'], function() {
+        var $ = layui.$;
+        var layer = layui.layer;
+
+        //触发事件
+        var active = {
+            importData: function(){
+                layer.confirm('确定导入？', {icon: 3, title:'提示'}, function(index) {
+                    layer.close(index);
+                    var wait = layer.load(2);
+                    $.ajax({
+                        url: "/index/item/import",
+                        success: function (data) {
+                            if (data.status == 200) {
+                                layer.close(wait);
+                                layer.msg('商品导入成功', {
+                                    icon: 1,
+                                    time: 2000
+                                });
+                            } else {
+                                layer.close(wait);
+                                layer.msg('商品导入失败，请重试', {
+                                    icon: 5,
+                                    time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                    anim: 6
+                                });
+                            }
+                        },
+                        error: function (e) {
+                            layer.close(wait);
+                            layer.msg('接口错误', {
+                                icon: 5,
+                                time: 2000, //2秒关闭（如果不配置，默认是3秒）
+                                anim: 6
+                            });
+                        }
+                    });
+                });
+            }
+        };
+
+        $('#importData').on('click', function(){
+            var othis = $(this), method = othis.data('method');
+            active[method] ? active[method].call(this, othis) : '';
+        });
+
+    });
+</script>
+
+</html>

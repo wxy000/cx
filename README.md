@@ -20,3 +20,11 @@
 ### cx-content-service（内容管理服务）
 #### tomcat8083
 #### dubbo20881
+## cx-search（搜索）
+### cx-search-interface
+### cx-search-service
+#### tomcat8084
+#### dubbo20882
+## cx-search-web
+#### tomcat8085
+#### 添加全局异常处理

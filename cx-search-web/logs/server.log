@@ -1,0 +1,634 @@
+
+
+[INFO ] 2018-08-25 09:24:29,722 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'cx-search-web': initialization started
+
+
+[INFO ] 2018-08-25 09:24:29,783 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:24:29 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:24:29,861 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-25 09:24:31,794 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-25 09:24:32,133 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-25 09:24:32,198 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-25 09:24:33,273 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, data: {cn.cxmall.content.service.ContentService=empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=13160&revision=1.0.0&side=consumer&timestamp=1535104853282 empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=13160&revision=1.0.0&side=consumer&timestamp=1535104853282 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=3204&side=provider&timeout=60000&timestamp=1535098633012, cn.cxmall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=10764&side=provider&timeout=600000&timestamp=1535112813173, cn.cxmall.content.service.ContentCategoryService=empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4020&revision=1.0.0&side=consumer&timestamp=1535158409008 empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4020&revision=1.0.0&side=consumer&timestamp=1535158409008 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentCategoryService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=10228&side=provider&timeout=60000&timestamp=1535158332458, cn.cxmall.service.ItemService=empty://192.168.25.1:20880/cn.cxmall.service.ItemService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=addItem,getItemList,getItemInfoById,updateItemStatusById,getItemById,updateItemById&pid=9992&side=provider&timeout=60000&timestamp=1535158333697, cn.cxmall.service.ItemCatService=empty://192.168.25.1:20880/cn.cxmall.service.ItemCatService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=9992&side=provider&timeout=60000&timestamp=1535158339937, cn.cxmall.search.service.SearchService=empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=9744&revision=1.0.0&side=consumer&timestamp=1535158417939 empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=9744&revision=1.0.0&side=consumer&timestamp=1535158417939 dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=1668&side=provider&timeout=60000&timestamp=1535158339756}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-25 09:24:33,319 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-25 09:24:34,216 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-25 09:24:34,217 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=toshiba-pc
+
+
+[INFO ] 2018-08-25 09:24:34,218 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_91
+
+
+[INFO ] 2018-08-25 09:24:34,219 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-25 09:24:34,219 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_91\jre
+
+
+[INFO ] 2018-08-25 09:24:34,221 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-08-25 09:24:34,221 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Skype\Phone\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Java\jdk1.8.0_91\bin;D:\apache-maven-3.5.4\bin\;C:\Program Files\Java\jdk1.8.0_91\jre1.8.0_171\bin;D:\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;d:\u8soft\admin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\王兴毅\AppData\Local\GitHubDesktop\app-1.2.6\resources\app\git\cmd;D:\oraclient;C:\Users\王兴毅\.dnx\bin;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;D:\搜狐影音\5.2.3.15;C:\Users\王兴毅\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-08-25 09:24:34,222 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王兴毅\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-25 09:24:34,223 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-25 09:24:34,225 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-25 09:24:34,226 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-25 09:24:34,226 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-25 09:24:34,227 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王兴毅
+
+
+[INFO ] 2018-08-25 09:24:34,227 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王兴毅
+
+
+[INFO ] 2018-08-25 09:24:34,228 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\myIDEA\cx\cx-search-web
+
+
+[INFO ] 2018-08-25 09:24:34,230 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@764c0b60
+
+
+[INFO ] 2018-08-25 09:24:34,361 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 09:24:35,632 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 09:24:35,748 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 09:24:35,849 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 09:24:35,969 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920335, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 09:24:35,971 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 09:24:36,079 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:24:36,412 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:24:37,497 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=1668&side=provider&timeout=60000&timestamp=1535158339756, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:24:37,955 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xcf4e00b4, /192.168.25.1:50882 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:24:37,956 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:24:38,112 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.cxmall.search.service.SearchService from url zookeeper://39.108.111.94:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=cx-search-web&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535160273034, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:24:38,506 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-25 09:24:38,508 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/commons/{page}]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.showPage(java.lang.String)
+
+
+[INFO ] 2018-08-25 09:24:39,287 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:24:29 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:24:39,421 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:24:29 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:24:39,537 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[WARN ] 2018-08-25 09:24:39,581 method:org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150)
+[THYMELEAF][localhost-startStop-1] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+
+
+[WARN ] 2018-08-25 09:24:39,601 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[WARN ] 2018-08-25 09:24:39,621 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[INFO ] 2018-08-25 09:24:39,789 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'cx-search-web': initialization completed in 10054 ms
+
+
+[INFO ] 2018-08-25 09:25:42,019 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'cx-search-web': initialization started
+
+
+[INFO ] 2018-08-25 09:25:42,053 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:25:42 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:25:42,115 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-25 09:25:43,064 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-25 09:25:43,340 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-25 09:25:43,357 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-25 09:25:43,989 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, data: {cn.cxmall.content.service.ContentService=empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=13160&revision=1.0.0&side=consumer&timestamp=1535104853282 empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=13160&revision=1.0.0&side=consumer&timestamp=1535104853282 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=3204&side=provider&timeout=60000&timestamp=1535098633012, cn.cxmall.content.service.ContentCategoryService=empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4020&revision=1.0.0&side=consumer&timestamp=1535158409008 empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4020&revision=1.0.0&side=consumer&timestamp=1535158409008 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentCategoryService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=10228&side=provider&timeout=60000&timestamp=1535158332458, cn.cxmall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=10764&side=provider&timeout=600000&timestamp=1535112813173, cn.cxmall.service.ItemService=empty://192.168.25.1:20880/cn.cxmall.service.ItemService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=addItem,getItemList,getItemInfoById,updateItemStatusById,getItemById,updateItemById&pid=9992&side=provider&timeout=60000&timestamp=1535158333697, cn.cxmall.service.ItemCatService=empty://192.168.25.1:20880/cn.cxmall.service.ItemCatService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=9992&side=provider&timeout=60000&timestamp=1535158339937, cn.cxmall.search.service.SearchService=empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034 empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=10092&revision=1.0.0&side=consumer&timestamp=1535160273034 dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=1668&side=provider&timeout=60000&timestamp=1535158339756}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-25 09:25:44,011 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-25 09:25:44,896 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-25 09:25:44,897 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=toshiba-pc
+
+
+[INFO ] 2018-08-25 09:25:44,897 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_91
+
+
+[INFO ] 2018-08-25 09:25:44,898 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-25 09:25:44,899 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_91\jre
+
+
+[INFO ] 2018-08-25 09:25:44,899 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-08-25 09:25:44,900 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Skype\Phone\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Java\jdk1.8.0_91\bin;D:\apache-maven-3.5.4\bin\;C:\Program Files\Java\jdk1.8.0_91\jre1.8.0_171\bin;D:\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;d:\u8soft\admin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\王兴毅\AppData\Local\GitHubDesktop\app-1.2.6\resources\app\git\cmd;D:\oraclient;C:\Users\王兴毅\.dnx\bin;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;D:\搜狐影音\5.2.3.15;C:\Users\王兴毅\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-08-25 09:25:44,901 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王兴毅\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-25 09:25:44,902 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-25 09:25:44,903 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-25 09:25:44,904 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-25 09:25:44,904 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-25 09:25:44,905 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王兴毅
+
+
+[INFO ] 2018-08-25 09:25:44,905 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王兴毅
+
+
+[INFO ] 2018-08-25 09:25:44,906 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\myIDEA\cx\cx-search-web
+
+
+[INFO ] 2018-08-25 09:25:44,908 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5da9686e
+
+
+[INFO ] 2018-08-25 09:25:44,966 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 09:25:46,187 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 09:25:46,291 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 09:25:46,368 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 09:25:46,464 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920336, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 09:25:46,466 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 09:25:46,524 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:25:46,856 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:25:48,016 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=1668&side=provider&timeout=60000&timestamp=1535158339756, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:25:48,375 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xf8767370, /192.168.25.1:50908 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:25:48,376 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:25:48,499 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.cxmall.search.service.SearchService from url zookeeper://39.108.111.94:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=cx-search-web&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535160343861, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:25:48,872 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-25 09:25:48,874 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/commons/{page}]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.showPage(java.lang.String)
+
+
+[INFO ] 2018-08-25 09:25:49,440 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:25:42 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:25:49,524 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:25:42 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:25:49,617 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[WARN ] 2018-08-25 09:25:49,658 method:org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150)
+[THYMELEAF][localhost-startStop-1] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+
+
+[WARN ] 2018-08-25 09:25:49,679 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[WARN ] 2018-08-25 09:25:49,696 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[INFO ] 2018-08-25 09:25:49,811 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'cx-search-web': initialization completed in 7787 ms
+
+
+[ERROR] 2018-08-25 09:26:20,331 method:cn.cxmall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常！
+java.lang.ArithmeticException: / by zero
+	at cn.cxmall.search.controller.SearchController.searchItemList(SearchController.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[ERROR] 2018-08-25 09:28:46,277 method:cn.cxmall.search.exception.GlobalExceptionResolver.resolveException(GlobalExceptionResolver.java:25)
+系统发生异常！
+java.lang.ArithmeticException: / by zero
+	at cn.cxmall.search.controller.SearchController.searchItemList(SearchController.java:42)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:222)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:137)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:814)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:737)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:969)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:860)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:621)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:845)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:243)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:100)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1041)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:603)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-08-25 09:31:06,666 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'cx-search-web': initialization started
+
+
+[INFO ] 2018-08-25 09:31:06,707 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:31:06 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:31:06,782 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-25 09:31:08,183 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-25 09:31:08,493 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-25 09:31:08,508 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-25 09:31:09,411 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, data: {cn.cxmall.content.service.ContentService=empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=13160&revision=1.0.0&side=consumer&timestamp=1535104853282 empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=13160&revision=1.0.0&side=consumer&timestamp=1535104853282 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=3204&side=provider&timeout=60000&timestamp=1535098633012, cn.cxmall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=10764&side=provider&timeout=600000&timestamp=1535112813173, cn.cxmall.content.service.ContentCategoryService=empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4020&revision=1.0.0&side=consumer&timestamp=1535158409008 empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4020&revision=1.0.0&side=consumer&timestamp=1535158409008 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentCategoryService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=10228&side=provider&timeout=60000&timestamp=1535158332458, cn.cxmall.service.ItemService=empty://192.168.25.1:20880/cn.cxmall.service.ItemService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=addItem,getItemList,getItemInfoById,updateItemStatusById,getItemById,updateItemById&pid=9992&side=provider&timeout=60000&timestamp=1535158333697, cn.cxmall.service.ItemCatService=empty://192.168.25.1:20880/cn.cxmall.service.ItemCatService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=9992&side=provider&timeout=60000&timestamp=1535158339937, cn.cxmall.search.service.SearchService=empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861 empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=7340&revision=1.0.0&side=consumer&timestamp=1535160343861 dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=1668&side=provider&timeout=60000&timestamp=1535158339756}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-25 09:31:09,513 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-25 09:31:10,378 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-25 09:31:10,382 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=toshiba-pc
+
+
+[INFO ] 2018-08-25 09:31:10,383 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_91
+
+
+[INFO ] 2018-08-25 09:31:10,384 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-25 09:31:10,384 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_91\jre
+
+
+[INFO ] 2018-08-25 09:31:10,386 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-08-25 09:31:10,386 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Skype\Phone\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Java\jdk1.8.0_91\bin;D:\apache-maven-3.5.4\bin\;C:\Program Files\Java\jdk1.8.0_91\jre1.8.0_171\bin;D:\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;d:\u8soft\admin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\王兴毅\AppData\Local\GitHubDesktop\app-1.2.6\resources\app\git\cmd;D:\oraclient;C:\Users\王兴毅\.dnx\bin;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;D:\搜狐影音\5.2.3.15;C:\Users\王兴毅\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-08-25 09:31:10,387 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王兴毅\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-25 09:31:10,388 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-25 09:31:10,390 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-25 09:31:10,390 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-25 09:31:10,390 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-25 09:31:10,391 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王兴毅
+
+
+[INFO ] 2018-08-25 09:31:10,391 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王兴毅
+
+
+[INFO ] 2018-08-25 09:31:10,392 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\myIDEA\cx\cx-search-web
+
+
+[INFO ] 2018-08-25 09:31:10,394 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@5dd3939f
+
+
+[INFO ] 2018-08-25 09:31:10,503 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 09:31:10,580 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 09:31:10,664 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920337, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 09:31:10,675 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 09:31:10,776 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=6688&revision=1.0.0&side=consumer&timestamp=1535160669229, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:31:11,094 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=6688&revision=1.0.0&side=consumer&timestamp=1535160669229, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:31:12,200 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=6688&revision=1.0.0&side=consumer&timestamp=1535160669229, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=1668&side=provider&timeout=60000&timestamp=1535158339756, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=6688&revision=1.0.0&side=consumer&timestamp=1535160669229, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=6688&revision=1.0.0&side=consumer&timestamp=1535160669229], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:31:12,698 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x83a44f1b, /192.168.25.1:51289 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:31:12,701 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:31:12,838 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.cxmall.search.service.SearchService from url zookeeper://39.108.111.94:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=cx-search-web&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=6688&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535160669229, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 09:31:13,231 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-25 09:31:13,235 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/commons/{page}]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.showPage(java.lang.String)
+
+
+[INFO ] 2018-08-25 09:31:14,483 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:31:06 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:31:14,687 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 09:31:06 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 09:31:14,962 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[WARN ] 2018-08-25 09:31:15,037 method:org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150)
+[THYMELEAF][localhost-startStop-1] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+
+
+[WARN ] 2018-08-25 09:31:15,085 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[WARN ] 2018-08-25 09:31:15,120 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[INFO ] 2018-08-25 09:31:15,336 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'cx-search-web': initialization completed in 8665 ms

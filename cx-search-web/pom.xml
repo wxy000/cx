@@ -10,20 +10,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cx-manager-web</artifactId>
+    <artifactId>cx-search-web</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
-        <dependency>
-            <groupId>cn.cxmall</groupId>
-            <artifactId>cx-manager-interface</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.cxmall</groupId>
-            <artifactId>cx-content-interface</artifactId>
-            <version>1.0.0</version>
-        </dependency>
         <dependency>
             <groupId>cn.cxmall</groupId>
             <artifactId>cx-search-interface</artifactId>
@@ -96,10 +86,17 @@
             <groupId>com.github.sgroschupf</groupId>
             <artifactId>zkclient</artifactId>
         </dependency>
-        <!-- 文件上传组件 -->
         <dependency>
-            <groupId>commons-fileupload</groupId>
-            <artifactId>commons-fileupload</artifactId>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring4</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.sourceforge.nekohtml</groupId>
+            <artifactId>nekohtml</artifactId>
         </dependency>
     </dependencies>
 
@@ -112,7 +109,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <configuration>
                     <path>/</path>
-                    <port>8081</port>
+                    <port>8085</port>
                 </configuration>
             </plugin>
         </plugins>
