@@ -632,3 +632,1727 @@ Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.Def
 
 [INFO ] 2018-08-25 09:31:15,336 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
 FrameworkServlet 'cx-search-web': initialization completed in 8665 ms
+
+
+[INFO ] 2018-08-25 10:36:03,289 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'cx-search-web': initialization started
+
+
+[INFO ] 2018-08-25 10:36:03,367 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 10:36:03 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 10:36:03,480 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-25 10:36:05,260 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-25 10:36:05,613 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-25 10:36:05,625 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-25 10:36:06,920 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, data: {cn.cxmall.content.service.ContentService=empty://192.168.25.1:20881/cn.cxmall.content.service.ContentService?anyhost=true&application=cx-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=7244&side=provider&timeout=60000&timestamp=1535164226322, cn.cxmall.content.service.ContentCategoryService=empty://192.168.25.1:20881/cn.cxmall.content.service.ContentCategoryService?anyhost=true&application=cx-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=7244&side=provider&timeout=60000&timestamp=1535164221134, cn.cxmall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=13768&side=provider&timeout=600000&timestamp=1535164230932, cn.cxmall.service.ItemService=empty://192.168.25.1:20880/cn.cxmall.service.ItemService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=addItem,getItemList,getItemInfoById,updateItemStatusById,getItemById,updateItemById&pid=10252&side=provider&timeout=60000&timestamp=1535164349768, cn.cxmall.service.ItemCatService=empty://192.168.25.1:20880/cn.cxmall.service.ItemCatService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=10252&side=provider&timeout=60000&timestamp=1535164353570, cn.cxmall.search.service.SearchService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-25 10:36:07,210 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-25 10:36:08,073 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-25 10:36:08,074 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=toshiba-pc
+
+
+[INFO ] 2018-08-25 10:36:08,074 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_91
+
+
+[INFO ] 2018-08-25 10:36:08,074 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-25 10:36:08,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_91\jre
+
+
+[INFO ] 2018-08-25 10:36:08,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-08-25 10:36:08,075 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Skype\Phone\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Java\jdk1.8.0_91\bin;D:\apache-maven-3.5.4\bin\;C:\Program Files\Java\jdk1.8.0_91\jre1.8.0_171\bin;D:\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;d:\u8soft\admin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\王兴毅\AppData\Local\GitHubDesktop\app-1.2.6\resources\app\git\cmd;D:\oraclient;C:\Users\王兴毅\.dnx\bin;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;D:\搜狐影音\5.2.3.15;C:\Users\王兴毅\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-08-25 10:36:08,076 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王兴毅\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-25 10:36:08,085 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-25 10:36:08,088 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-25 10:36:08,089 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-25 10:36:08,089 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-25 10:36:08,091 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王兴毅
+
+
+[INFO ] 2018-08-25 10:36:08,093 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王兴毅
+
+
+[INFO ] 2018-08-25 10:36:08,093 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\myIDEA\cx\cx-search-web
+
+
+[INFO ] 2018-08-25 10:36:08,095 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3b4dbdc3
+
+
+[INFO ] 2018-08-25 10:36:08,588 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 10:36:09,818 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 10:36:09,962 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 10:36:10,038 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 10:36:10,124 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb92033b, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 10:36:10,126 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 10:36:10,190 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 10:36:10,516 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 10:36:11,574 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 10:36:12,020 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x257a14eb, /192.168.25.1:58313 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 10:36:12,020 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 10:36:12,156 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.cxmall.search.service.SearchService from url zookeeper://39.108.111.94:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=cx-search-web&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535164566429, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 10:36:13,083 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-25 10:36:13,087 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/commons/{page}]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.showPage(java.lang.String)
+
+
+[INFO ] 2018-08-25 10:36:14,720 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 10:36:03 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 10:36:15,185 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 10:36:03 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 10:36:15,410 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[WARN ] 2018-08-25 10:36:15,463 method:org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150)
+[THYMELEAF][localhost-startStop-1] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+
+
+[WARN ] 2018-08-25 10:36:15,503 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[WARN ] 2018-08-25 10:36:15,533 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[INFO ] 2018-08-25 10:36:15,827 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'cx-search-web': initialization completed in 12520 ms
+
+
+[WARN ] 2018-08-25 11:46:41,857 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x16509c2eb92033b
+
+
+[INFO ] 2018-08-25 11:46:41,930 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x16509c2eb92033b, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-08-25 11:46:42,091 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2018-08-25 11:46:42,129 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 11:46:52,131 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 10098ms for sessionid 0x16509c2eb92033b
+
+
+[INFO ] 2018-08-25 11:46:52,150 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 10098ms for sessionid 0x16509c2eb92033b, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-08-25 11:46:53,068 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 11:46:53,070 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb92033b for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 11:46:54,872 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 11:46:54,955 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[WARN ] 2018-08-25 11:46:55,053 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1285)
+Unable to reconnect to ZooKeeper service, session 0x16509c2eb92033b has expired
+
+
+[INFO ] 2018-08-25 11:46:55,053 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Expired)
+
+
+[INFO ] 2018-08-25 11:46:55,053 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1154)
+Unable to reconnect to ZooKeeper service, session 0x16509c2eb92033b has expired, closing socket connection
+
+
+[INFO ] 2018-08-25 11:46:55,083 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3b4dbdc3
+
+
+[INFO ] 2018-08-25 11:46:55,118 method:org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:519)
+EventThread shut down for session: 0x16509c2eb92033b
+
+
+[INFO ] 2018-08-25 11:46:55,238 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:282)
+ [DUBBO] Recover register url [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 11:46:55,306 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 11:46:55,339 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:292)
+ [DUBBO] Recover subscribe url [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 11:46:56,567 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 11:46:56,669 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 11:46:57,883 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 11:46:57,899 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:309)
+ [DUBBO] Retry register [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 11:46:58,198 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 11:46:58,269 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 11:46:58,487 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920340, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 11:46:58,488 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 11:46:58,959 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 11:46:58,971 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:354)
+ [DUBBO] Retry subscribe {consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429=[com.alibaba.dubbo.registry.integration.RegistryDirectory@3c722d39]}, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 11:46:59,290 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-08-25 11:46:59,429 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 11:46:59,575 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,579 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,594 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,605 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,609 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-08-25 11:46:59,812 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 11:46:59,814 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,831 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,847 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,849 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,903 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,906 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 11:46:59,909 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-08-25 11:47:00,434 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 12:36:30,552 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x16509c2eb920340
+
+
+[INFO ] 2018-08-25 12:36:30,553 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x16509c2eb920340, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-08-25 12:36:30,653 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2018-08-25 12:36:30,970 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:30,971 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:31,841 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:31,842 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:33,194 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:33,197 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:33,616 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:33,617 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:33,969 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:33,970 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:36,010 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:36,012 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:36,780 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:36,781 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:36:37,501 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:47,502 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 10619ms for sessionid 0x16509c2eb920340
+
+
+[INFO ] 2018-08-25 12:36:47,503 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 10619ms for sessionid 0x16509c2eb920340, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-08-25 12:36:48,784 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:36:58,785 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 11181ms for sessionid 0x16509c2eb920340
+
+
+[INFO ] 2018-08-25 12:36:58,786 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 11181ms for sessionid 0x16509c2eb920340, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-08-25 12:36:58,970 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:37:02,609 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:37:02,888 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 12:37:04,108 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920340 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:37:05,346 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 12:37:05,428 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[WARN ] 2018-08-25 12:37:05,506 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1285)
+Unable to reconnect to ZooKeeper service, session 0x16509c2eb920340 has expired
+
+
+[INFO ] 2018-08-25 12:37:05,506 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Expired)
+
+
+[INFO ] 2018-08-25 12:37:05,506 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1154)
+Unable to reconnect to ZooKeeper service, session 0x16509c2eb920340 has expired, closing socket connection
+
+
+[INFO ] 2018-08-25 12:37:05,563 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3b4dbdc3
+
+
+[INFO ] 2018-08-25 12:37:05,586 method:org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:519)
+EventThread shut down for session: 0x16509c2eb920340
+
+
+[INFO ] 2018-08-25 12:37:05,586 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:282)
+ [DUBBO] Recover register url [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:05,772 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:292)
+ [DUBBO] Recover subscribe url [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:05,772 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 12:37:05,928 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:309)
+ [DUBBO] Retry register [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 12:37:06,996 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 12:37:07,097 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 12:37:07,178 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 12:37:07,317 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920342, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 12:37:07,317 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 12:37:07,493 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:07,645 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:07,750 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0x257a14eb, /192.168.25.1:58313 => /192.168.25.1:20882], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:07,881 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:354)
+ [DUBBO] Retry subscribe {consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429=[com.alibaba.dubbo.registry.integration.RegistryDirectory@3c722d39]}, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:08,044 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.1:20882,url:dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535164566429, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:08,229 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:08,509 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xb4f77a2d, /192.168.25.1:54217 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:08,510 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:09,254 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:09,259 method:com.alibaba.dubbo.remoting.transport.netty.NettyChannel.close(NettyChannel.java:135)
+ [DUBBO] Close netty channel [id: 0xb4f77a2d, /192.168.25.1:54217 => /192.168.25.1:20882], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:09,370 method:com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol$1.disconnected(DubboProtocol.java:130)
+ [DUBBO] disconected from /192.168.25.1:20882,url:dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search-web&check=false&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535164566429, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:10,373 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:10,378 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x8c83faa0, /192.168.25.1:54226 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 12:37:10,378 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 12:37:10,622 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 13:51:20,679 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1108)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x16509c2eb920342
+
+
+[INFO ] 2018-08-25 13:51:21,027 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1156)
+Client session timed out, have not heard from server in 20000ms for sessionid 0x16509c2eb920342, closing socket connection and attempting reconnect
+
+
+[INFO ] 2018-08-25 13:51:21,162 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Disconnected)
+
+
+[INFO ] 2018-08-25 13:51:21,304 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:21,307 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:21,971 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:22,026 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:23,344 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:23,443 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:23,666 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:23,667 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:24,105 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:24,105 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:25,860 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:25,861 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:26,750 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:26,750 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:27,286 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:27,287 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:28,929 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:28,929 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:29,259 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:29,260 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:29,962 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:30,008 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:32,067 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:32,376 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:33,561 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:33,561 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:33,979 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:34,022 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:36,164 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:36,164 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.NoRouteToHostException: No route to host: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:36,972 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:38,211 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:38,547 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2182. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 13:51:39,769 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x16509c2eb920342 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:40,888 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 13:51:40,994 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[WARN ] 2018-08-25 13:51:41,129 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1285)
+Unable to reconnect to ZooKeeper service, session 0x16509c2eb920342 has expired
+
+
+[INFO ] 2018-08-25 13:51:41,129 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1154)
+Unable to reconnect to ZooKeeper service, session 0x16509c2eb920342 has expired, closing socket connection
+
+
+[INFO ] 2018-08-25 13:51:41,129 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (Expired)
+
+
+[INFO ] 2018-08-25 13:51:41,163 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@3b4dbdc3
+
+
+[INFO ] 2018-08-25 13:51:41,232 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 13:51:41,232 method:org.apache.zookeeper.ClientCnxn$EventThread.run(ClientCnxn.java:519)
+EventThread shut down for session: 0x16509c2eb920342
+
+
+[INFO ] 2018-08-25 13:51:41,270 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:282)
+ [DUBBO] Recover register url [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 13:51:41,271 method:com.alibaba.dubbo.registry.support.FailbackRegistry.recover(FailbackRegistry.java:292)
+ [DUBBO] Recover subscribe url [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 13:51:42,458 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 13:51:42,566 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 13:51:42,643 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 13:51:42,753 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb92034c, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 13:51:42,753 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 13:51:42,939 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 13:51:43,134 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 13:51:43,291 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 13:51:44,391 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 13:51:44,821 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-08-25 13:51:46,116 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:309)
+ [DUBBO] Retry register [consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 13:51:46,758 method:com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:354)
+ [DUBBO] Retry subscribe {consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429=[com.alibaba.dubbo.registry.integration.RegistryDirectory@3c722d39]}, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 13:51:48,109 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13768&side=provider&timeout=60000&timestamp=1535164236031, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=8836&revision=1.0.0&side=consumer&timestamp=1535164566429], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:03:57,108 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'cx-search-web': initialization started
+
+
+[INFO ] 2018-08-25 16:03:57,182 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 16:03:57 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 16:03:57,360 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-25 16:04:00,753 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-25 16:04:01,558 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-25 16:04:01,667 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-25 16:04:02,999 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, data: {cn.cxmall.content.service.ContentService=empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=getContentList,batchRemoveContent,updateContent,saveContent,deleteContentById&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164572710 empty://192.168.25.1/cn.cxmall.content.service.ContentService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=getContentList,batchRemoveContent,updateContent,saveContent,deleteContentById&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164572710 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=batchRemoveContent,getContentList,updateContent,deleteContentById,saveContent&pid=7244&side=provider&timeout=60000&timestamp=1535164226322, cn.cxmall.content.service.ContentCategoryService=empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164566852 empty://192.168.25.1/cn.cxmall.content.service.ContentCategoryService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164566852 dubbo://192.168.25.1:20881/cn.cxmall.content.service.ContentCategoryService?anyhost=true&application=cx-content&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=7244&side=provider&timeout=60000&timestamp=1535164221134, cn.cxmall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=11432&side=provider&timeout=600000&timestamp=1535184108509, cn.cxmall.service.ItemService=empty://192.168.25.1/cn.cxmall.service.ItemService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=getItemList,addItem,getItemInfoById,getItemById,updateItemStatusById,updateItemById&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164575784 empty://192.168.25.1/cn.cxmall.service.ItemService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=getItemList,addItem,getItemInfoById,getItemById,updateItemStatusById,updateItemById&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164575784 dubbo://192.168.25.1:20880/cn.cxmall.service.ItemService?anyhost=true&application=cx-manager&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=addItem,getItemList,getItemInfoById,updateItemStatusById,getItemById,updateItemById&pid=10252&side=provider&timeout=60000&timestamp=1535164349768, plication=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164577253=empty://192.168.25.1/cn.cxmall.search.service.SearchItemService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164577253 dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=13768&side=provider&timeout=600000&timestamp=1535164230932, cn.cxmall.service.ItemCatService=empty://192.168.25.1/cn.cxmall.service.ItemCatService?application=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164574223 empty://192.168.25.1/cn.cxmall.service.ItemCatService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164574223 dubbo://192.168.25.1:20880/cn.cxmall.service.ItemCatService?anyhost=true&application=cx-manager&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=10252&side=provider&timeout=60000&timestamp=1535164353570, cn.cxmall.search.service.SearchService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=11432&side=provider&timeout=60000&timestamp=1535184114348}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-25 16:04:03,281 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-25 16:04:04,145 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-25 16:04:04,146 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=toshiba-pc
+
+
+[INFO ] 2018-08-25 16:04:04,147 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_91
+
+
+[INFO ] 2018-08-25 16:04:04,147 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-25 16:04:04,148 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_91\jre
+
+
+[INFO ] 2018-08-25 16:04:04,148 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-08-25 16:04:04,149 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Skype\Phone\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Java\jdk1.8.0_91\bin;D:\apache-maven-3.5.4\bin\;C:\Program Files\Java\jdk1.8.0_91\jre1.8.0_171\bin;D:\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;d:\u8soft\admin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\王兴毅\AppData\Local\GitHubDesktop\app-1.2.6\resources\app\git\cmd;D:\oraclient;C:\Users\王兴毅\.dnx\bin;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;D:\搜狐影音\5.2.3.15;C:\Users\王兴毅\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-08-25 16:04:04,150 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王兴毅\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-25 16:04:04,152 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-25 16:04:04,155 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-25 16:04:04,156 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-25 16:04:04,157 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-25 16:04:04,157 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王兴毅
+
+
+[INFO ] 2018-08-25 16:04:04,157 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王兴毅
+
+
+[INFO ] 2018-08-25 16:04:04,158 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\myIDEA\cx\cx-search-web
+
+
+[INFO ] 2018-08-25 16:04:04,160 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@613266ca
+
+
+[INFO ] 2018-08-25 16:04:04,303 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 16:04:05,536 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 16:04:05,684 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 16:04:05,761 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 16:04:05,869 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920351, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 16:04:05,871 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 16:04:05,923 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5168&revision=1.0.0&side=consumer&timestamp=1535184242653, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:04:06,287 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5168&revision=1.0.0&side=consumer&timestamp=1535184242653, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:04:07,550 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5168&revision=1.0.0&side=consumer&timestamp=1535184242653, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=11432&side=provider&timeout=60000&timestamp=1535184114348, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5168&revision=1.0.0&side=consumer&timestamp=1535184242653, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5168&revision=1.0.0&side=consumer&timestamp=1535184242653], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:04:08,791 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0xa4cf9e48, /192.168.25.1:60140 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:04:08,793 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:04:09,451 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.cxmall.search.service.SearchService from url zookeeper://39.108.111.94:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=cx-search-web&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5168&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535184242653, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 16:04:10,499 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/commons/{page}]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.showPage(java.lang.String)
+
+
+[INFO ] 2018-08-25 16:04:10,501 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-25 16:04:11,432 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 16:03:57 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 16:04:11,692 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 16:03:57 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 16:04:11,894 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[WARN ] 2018-08-25 16:04:12,004 method:org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150)
+[THYMELEAF][localhost-startStop-1] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+
+
+[WARN ] 2018-08-25 16:04:12,057 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[WARN ] 2018-08-25 16:04:12,084 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[INFO ] 2018-08-25 16:04:12,251 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'cx-search-web': initialization completed in 15123 ms
+
+
+[INFO ] 2018-08-25 18:10:40,624 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:489)
+FrameworkServlet 'cx-search-web': initialization started
+
+
+[INFO ] 2018-08-25 18:10:40,882 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:578)
+Refreshing WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 18:10:40 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 18:10:40,958 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/springmvc.xml]
+
+
+[INFO ] 2018-08-25 18:10:42,974 method:
+using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+
+
+[INFO ] 2018-08-25 18:10:43,551 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [conf/resource.properties]
+
+
+[INFO ] 2018-08-25 18:10:43,578 method:org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.<init>(AutowiredAnnotationBeanPostProcessor.java:153)
+JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+
+
+[INFO ] 2018-08-25 18:10:45,137 method:com.alibaba.dubbo.registry.support.AbstractRegistry.loadProperties(AbstractRegistry.java:232)
+ [DUBBO] Load registry store file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, data: {cn.cxmall.content.service.ContentService=empty://192.168.25.1:20881/cn.cxmall.content.service.ContentService?anyhost=true&application=cx-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentService&methods=getContentList,batchRemoveContent,updateContent,saveContent,deleteContentById&pid=7940&side=provider&timeout=60000&timestamp=1535191650547, cn.cxmall.search.service.SearchItemService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=13428&side=provider&timeout=600000&timestamp=1535191736301, cn.cxmall.content.service.ContentCategoryService=empty://192.168.25.1:20881/cn.cxmall.content.service.ContentCategoryService?anyhost=true&application=cx-content&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.content.service.ContentCategoryService&methods=deleteContentCat,updateContentCat,addContentCat,getContentCatList&pid=7940&side=provider&timeout=60000&timestamp=1535191644575, cn.cxmall.service.ItemService=empty://192.168.25.1:20880/cn.cxmall.service.ItemService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemService&methods=getItemList,addItem,getItemInfoById,updateItemStatusById,getItemById,updateItemById&pid=10640&side=provider&timeout=60000&timestamp=1535191672536, cn.cxmall.service.ItemCatService=empty://192.168.25.1:20880/cn.cxmall.service.ItemCatService?anyhost=true&application=cx-manager&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.service.ItemCatService&methods=getCatList&pid=10640&side=provider&timeout=60000&timestamp=1535191674201, plication=cx-manager-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164577253=empty://192.168.25.1/cn.cxmall.search.service.SearchItemService?application=cx-manager-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=4716&revision=1.0.0&side=consumer&timestamp=1535164577253 dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchItemService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchItemService&methods=importAllItem&pid=13768&side=provider&timeout=600000&timestamp=1535164230932, cn.cxmall.search.service.SearchService=empty://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&category=configurators&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13428&side=provider&timeout=60000&timestamp=1535191738148}, dubbo version: 2.5.3, current host: 127.0.0.1
+
+
+[INFO ] 2018-08-25 18:10:45,250 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+
+
+[INFO ] 2018-08-25 18:10:45,252 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:host.name=toshiba-pc
+
+
+[INFO ] 2018-08-25 18:10:45,253 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.version=1.8.0_91
+
+
+[INFO ] 2018-08-25 18:10:45,254 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.vendor=Oracle Corporation
+
+
+[INFO ] 2018-08-25 18:10:45,257 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.home=C:\Program Files\Java\jdk1.8.0_91\jre
+
+
+[INFO ] 2018-08-25 18:10:45,257 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.class.path=D:\apache-maven-3.5.4\boot\plexus-classworlds-2.5.2.jar;D:\JetBrains\IntelliJ IDEA 2018.1.4\lib\idea_rt.jar
+
+
+[INFO ] 2018-08-25 18:10:45,269 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.library.path=C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Skype\Phone\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files\Java\jdk1.8.0_91\bin;D:\apache-maven-3.5.4\bin\;C:\Program Files\Java\jdk1.8.0_91\jre1.8.0_171\bin;D:\Android\sdk\platform-tools;C:\Program Files (x86)\Microsoft SQL Server\80\Tools\Binn\;d:\u8soft\admin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\王兴毅\AppData\Local\GitHubDesktop\app-1.2.6\resources\app\git\cmd;D:\oraclient;C:\Users\王兴毅\.dnx\bin;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;C:\Users\王兴毅\AppData\Local\Microsoft\WindowsApps;D:\搜狐影音\5.2.3.15;C:\Users\王兴毅\AppData\Local\GitHubDesktop\bin;.
+
+
+[INFO ] 2018-08-25 18:10:45,271 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.io.tmpdir=C:\Users\王兴毅\AppData\Local\Temp\
+
+
+[INFO ] 2018-08-25 18:10:45,280 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:java.compiler=<NA>
+
+
+[INFO ] 2018-08-25 18:10:45,281 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.name=Windows 10
+
+
+[INFO ] 2018-08-25 18:10:45,284 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.arch=amd64
+
+
+[INFO ] 2018-08-25 18:10:45,284 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:os.version=10.0
+
+
+[INFO ] 2018-08-25 18:10:45,285 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.name=王兴毅
+
+
+[INFO ] 2018-08-25 18:10:45,287 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.home=C:\Users\王兴毅
+
+
+[INFO ] 2018-08-25 18:10:45,288 method:org.apache.zookeeper.Environment.logEnv(Environment.java:100)
+Client environment:user.dir=D:\myIDEA\cx\cx-search-web
+
+
+[INFO ] 2018-08-25 18:10:45,292 method:org.apache.zookeeper.ZooKeeper.<init>(ZooKeeper.java:438)
+Initiating client connection, connectString=39.108.111.94:2181,39.108.111.94:2182,39.108.111.94:2183 sessionTimeout=30000 watcher=org.I0Itec.zkclient.ZkClient@60d2ca01
+
+
+[INFO ] 2018-08-25 18:10:45,465 method:org.I0Itec.zkclient.ZkEventThread.run(ZkEventThread.java:64)
+Starting ZkClient event thread.
+
+
+[INFO ] 2018-08-25 18:10:45,522 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2183. Will not attempt to authenticate using SASL (unknown error)
+
+
+[WARN ] 2018-08-25 18:10:46,835 method:org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1162)
+Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+
+
+[INFO ] 2018-08-25 18:10:46,985 method:org.apache.zookeeper.ClientCnxn$SendThread.logStartConnect(ClientCnxn.java:1032)
+Opening socket connection to server 39.108.111.94/39.108.111.94:2181. Will not attempt to authenticate using SASL (unknown error)
+
+
+[INFO ] 2018-08-25 18:10:47,065 method:org.apache.zookeeper.ClientCnxn$SendThread.primeConnection(ClientCnxn.java:876)
+Socket connection established to 39.108.111.94/39.108.111.94:2181, initiating session
+
+
+[INFO ] 2018-08-25 18:10:47,172 method:org.apache.zookeeper.ClientCnxn$SendThread.onConnected(ClientCnxn.java:1299)
+Session establishment complete on server 39.108.111.94/39.108.111.94:2181, sessionid = 0x16509c2eb920361, negotiated timeout = 30000
+
+
+[INFO ] 2018-08-25 18:10:47,174 method:org.I0Itec.zkclient.ZkClient.processStateChanged(ZkClient.java:449)
+zookeeper state changed (SyncConnected)
+
+
+[INFO ] 2018-08-25 18:10:47,234 method:com.alibaba.dubbo.registry.support.AbstractRegistry.register(AbstractRegistry.java:302)
+ [DUBBO] Register: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=consumers&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5932&revision=1.0.0&side=consumer&timestamp=1535191844883, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 18:10:47,587 method:com.alibaba.dubbo.registry.support.AbstractRegistry.subscribe(AbstractRegistry.java:325)
+ [DUBBO] Subscribe: consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5932&revision=1.0.0&side=consumer&timestamp=1535191844883, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 18:10:48,778 method:com.alibaba.dubbo.registry.support.AbstractRegistry.notify(AbstractRegistry.java:422)
+ [DUBBO] Notify urls for subscribe url consumer://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=providers,configurators,routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5932&revision=1.0.0&side=consumer&timestamp=1535191844883, urls: [dubbo://192.168.25.1:20882/cn.cxmall.search.service.SearchService?anyhost=true&application=cx-search&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=13428&side=provider&timeout=60000&timestamp=1535191738148, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=configurators&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5932&revision=1.0.0&side=consumer&timestamp=1535191844883, empty://192.168.25.1/cn.cxmall.search.service.SearchService?application=cx-search-web&category=routers&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5932&revision=1.0.0&side=consumer&timestamp=1535191844883], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[WARN ] 2018-08-25 18:10:48,797 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,801 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,805 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,809 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,811 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,815 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,819 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,823 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,826 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,828 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,830 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,833 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,842 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,884 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,922 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,925 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,928 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,932 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,938 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,941 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,946 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,949 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,978 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,982 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:48,995 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:49,004 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[WARN ] 2018-08-25 18:10:49,008 method:com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:221)
+ [DUBBO] Failed to save registry store file, cause: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties, dubbo version: 2.5.3, current host: 192.168.25.1
+java.io.IOException: Can not lock the registry cache file C:\Users\王兴毅\.dubbo\dubbo-registry-39.108.111.94.cache, ignore and retry later, maybe multi java process use the file, please config: dubbo.registry.file=xxx.properties
+	at com.alibaba.dubbo.registry.support.AbstractRegistry.doSaveProperties(AbstractRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.AbstractRegistry$SaveProperties.run(AbstractRegistry.java:150)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+
+[INFO ] 2018-08-25 18:10:49,375 method:com.alibaba.dubbo.remoting.transport.AbstractClient.connect(AbstractClient.java:287)
+ [DUBBO] Successed connect to server /192.168.25.1:20882 from NettyClient 192.168.25.1 using dubbo version 2.5.3, channel is NettyChannel [channel=[id: 0x9ae7f908, /192.168.25.1:53136 => /192.168.25.1:20882]], dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 18:10:49,377 method:com.alibaba.dubbo.remoting.transport.AbstractClient.<init>(AbstractClient.java:105)
+ [DUBBO] Start NettyClient toshiba-pc/192.168.25.1 connect to the server /192.168.25.1:20882, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 18:10:49,705 method:com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:423)
+ [DUBBO] Refer dubbo service cn.cxmall.search.service.SearchService from url zookeeper://39.108.111.94:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=cx-search-web&check=false&dubbo=2.5.3&interface=cn.cxmall.search.service.SearchService&methods=search&pid=5932&revision=1.0.0&side=consumer&timeout=60000&timestamp=1535191844883, dubbo version: 2.5.3, current host: 192.168.25.1
+
+
+[INFO ] 2018-08-25 18:10:52,233 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/search]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.searchItemList(java.lang.String,java.lang.Integer,org.springframework.ui.Model) throws java.lang.Exception
+
+
+[INFO ] 2018-08-25 18:10:52,238 method:org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:527)
+Mapped "{[/commons/{page}]}" onto public java.lang.String cn.cxmall.search.controller.SearchController.showPage(java.lang.String)
+
+
+[INFO ] 2018-08-25 18:10:53,946 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 18:10:40 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 18:10:54,369 method:org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.initControllerAdviceCache(RequestMappingHandlerAdapter.java:532)
+Looking for @ControllerAdvice: WebApplicationContext for namespace 'cx-search-web-servlet': startup date [Sat Aug 25 18:10:40 CST 2018]; root of context hierarchy
+
+
+[INFO ] 2018-08-25 18:10:54,928 method:org.springframework.web.servlet.handler.AbstractUrlHandlerMapping.registerHandler(AbstractUrlHandlerMapping.java:341)
+Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+
+
+[WARN ] 2018-08-25 18:10:55,044 method:org.thymeleaf.templatemode.TemplateMode.parse(TemplateMode.java:150)
+[THYMELEAF][localhost-startStop-1] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+
+
+[WARN ] 2018-08-25 18:10:55,078 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[WARN ] 2018-08-25 18:10:55,098 method:org.thymeleaf.standard.serializer.StandardJavaScriptSerializer.handleErrorLoggingOnJacksonInitialization(StandardJavaScriptSerializer.java:563)
+[THYMELEAF] Could not initialize Jackson-based serializer even if the Jackson library was detected to be present at the classpath. Please make sure you are adding the jackson-databind module to your classpath, and that version is >= 2.5.0. THYMELEAF INITIALIZATION WILL CONTINUE, but Jackson will not be used for JavaScript serialization. Set the log to DEBUG to see a complete exception trace. Exception message is: com.fasterxml.jackson.databind.ObjectMapper.disable([Lcom/fasterxml/jackson/core/JsonGenerator$Feature;)Lcom/fasterxml/jackson/databind/ObjectMapper;
+
+
+[INFO ] 2018-08-25 18:10:55,333 method:org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:508)
+FrameworkServlet 'cx-search-web': initialization completed in 14510 ms

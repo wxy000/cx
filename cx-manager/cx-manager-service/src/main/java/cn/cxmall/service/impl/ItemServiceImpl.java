@@ -5,6 +5,7 @@ import cn.cxmall.common.pojo.ItemInfo;
 import cn.cxmall.common.result.CxResult;
 import cn.cxmall.common.result.DataGridResult;
 import cn.cxmall.common.utils.IDUtils;
+import cn.cxmall.common.utils.JsonUtils;
 import cn.cxmall.mapper.TbItemDescMapper;
 import cn.cxmall.mapper.TbItemMapper;
 import cn.cxmall.pojo.TbItem;
@@ -42,6 +43,9 @@ public class ItemServiceImpl implements ItemService {
     private ItemInfoMapper itemInfoMapper;
     @Autowired
     private JmsTemplate jmsTemplate;
+    @Autowired
+    private JedisClient jedisClient;
+
     @Resource
     private Destination topicDestination;
 

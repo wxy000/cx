@@ -28,3 +28,5 @@
 ## cx-search-web
 #### tomcat8085
 #### 添加全局异常处理
+## cx-item-web（前台商品详细）
+#### tomcat8086
