@@ -1,5 +1,6 @@
 package cn.cxmall.service.impl;
 
+import cn.cxmall.common.jedis.JedisClient;
 import cn.cxmall.common.pojo.ItemInfo;
 import cn.cxmall.common.result.CxResult;
 import cn.cxmall.common.result.DataGridResult;
@@ -15,8 +16,12 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.core.JmsTemplate;
+import org.springframework.jms.core.MessageCreator;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+import javax.jms.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -35,6 +40,10 @@ public class ItemServiceImpl implements ItemService {
     private TbItemDescMapper itemDescMapper;
     @Autowired
     private ItemInfoMapper itemInfoMapper;
+    @Autowired
+    private JmsTemplate jmsTemplate;
+    @Resource
+    private Destination topicDestination;
 
     @Override
     public TbItem getItemById(long id) {
@@ -76,7 +85,7 @@ public class ItemServiceImpl implements ItemService {
     @Override
     public CxResult addItem(TbItem item, String desc) {
         //生成商品id
-        long itemId = IDUtils.genItemId();
+        final long itemId = IDUtils.genItemId();
         //补全item属性
         item.setId(itemId);
         //商品状态：1、正常，2、下架，3、删除
@@ -94,6 +103,14 @@ public class ItemServiceImpl implements ItemService {
         itemDesc.setUpdated(new Date());
         //向商品描述表插入数据
         itemDescMapper.insert(itemDesc);
+        //发送商品添加消息
+        jmsTemplate.send(topicDestination, new MessageCreator() {
+            @Override
+            public Message createMessage(Session session) throws JMSException {
+                TextMessage message = session.createTextMessage("" + itemId);
+                return message;
+            }
+        });
         //返回成功
         return CxResult.ok();
     }
